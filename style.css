@@ -1,8 +1,4 @@
 
-/* =====================================
-   GENERAL STYLING
-===================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,25 +16,7 @@ body {
     background-color: #f5f8fc;
 }
 
-/* Skip Navigation */
-
-.skip-link {
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    background: #087e8b;
-    color: white;
-    padding: 10px 15px;
-    z-index: 1000;
-}
-
-.skip-link:focus {
-    top: 10px;
-}
-
-/* =====================================
-   HEADER AND NAVIGATION
-===================================== */
+/* Header */
 
 .header {
     background-color: #ffffff;
@@ -47,7 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
 }
 
 .logo h1 {
@@ -76,9 +53,7 @@ body {
     color: #087e8b;
 }
 
-/* =====================================
-   HOME SECTION
-===================================== */
+/* Home */
 
 .home {
     min-height: 430px;
@@ -118,13 +93,7 @@ body {
     font-weight: bold;
 }
 
-.button:hover {
-    background-color: #e8f7f8;
-}
-
-/* =====================================
-   COMMON SECTION STYLING
-===================================== */
+/* Common Section Styling */
 
 .about,
 .services,
@@ -150,9 +119,7 @@ body {
     color: #666;
 }
 
-/* =====================================
-   ABOUT SECTION
-===================================== */
+/* About */
 
 .about {
     background-color: white;
@@ -183,9 +150,7 @@ body {
     color: #087e8b;
 }
 
-/* =====================================
-   SERVICES SECTION
-===================================== */
+/* Services */
 
 .service-container {
     display: grid;
@@ -198,7 +163,7 @@ body {
     background-color: white;
     padding: 30px 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
     transition: 0.3s;
 }
 
@@ -211,9 +176,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* =====================================
-   DOCTORS SECTION
-===================================== */
+/* Doctors */
 
 .doctors {
     background-color: white;
@@ -245,9 +208,7 @@ body {
     margin-top: 5px;
 }
 
-/* =====================================
-   APPOINTMENT SECTION
-===================================== */
+/* Appointment */
 
 .appointment-form {
     max-width: 650px;
@@ -255,19 +216,11 @@ body {
     padding: 35px;
     margin: 30px auto 0;
     border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
 }
 
 .form-group {
     margin-bottom: 18px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 7px;
-    font-weight: bold;
-    color: #333;
 }
 
 .form-group input,
@@ -279,28 +232,11 @@ body {
     border-radius: 5px;
     font-size: 15px;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
 }
 
 .form-group textarea {
     resize: vertical;
 }
-
-/* Keyboard Focus Indicators */
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus,
-.appointment-form button:focus-visible,
-.navigation a:focus-visible,
-.button:focus-visible {
-    outline: 3px solid #087e8b;
-    outline-offset: 3px;
-    border-color: #087e8b;
-}
-
-/* Form Button */
 
 .appointment-form button {
     width: 100%;
@@ -317,30 +253,7 @@ body {
     background-color: #06636d;
 }
 
-/* Validation Messages */
-
-.error-message {
-    display: block;
-    color: #c62828;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-[aria-invalid="true"] {
-    border-color: #c62828 !important;
-}
-
-/* Form Status Message */
-
-#formMessage {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #087e8b;
-}
-
-/* =====================================
-   CONTACT SECTION
-===================================== */
+/* Contact */
 
 .contact {
     background-color: white;
@@ -367,9 +280,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* =====================================
-   FOOTER
-===================================== */
+/* Footer */
 
 .footer {
     background-color: #123b46;
@@ -378,14 +289,11 @@ body {
     padding: 30px 15px;
 }
 
-.footer h2 {
-    font-size: 22px;
+.footer h3 {
     margin-bottom: 8px;
 }
 
-/* =====================================
-   RESPONSIVE DESIGN
-===================================== */
+/* Responsive Design */
 
 @media (max-width: 768px) {
 
@@ -421,40 +329,8 @@ body {
         padding: 65px 7%;
     }
 
-    .home h2 {
-        font-size: 27px;
-    }
-
     .appointment-form {
         padding: 20px;
-    }
-
-    .about,
-    .services,
-    .doctors,
-    .appointment,
-    .contact {
-        padding: 45px 6%;
-    }
-
-}
-
-/* =====================================
-   REDUCED MOTION ACCESSIBILITY
-===================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
     }
 
 }

@@ -1,0 +1,460 @@
+
+/* =====================================
+   GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f8fc;
+}
+
+/* Skip Navigation */
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background: #087e8b;
+    color: white;
+    padding: 10px 15px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* =====================================
+   HEADER AND NAVIGATION
+===================================== */
+
+.header {
+    background-color: #ffffff;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo h1 {
+    color: #087e8b;
+    font-size: 27px;
+}
+
+.logo p {
+    color: #666;
+    font-size: 13px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #087e8b;
+}
+
+/* =====================================
+   HOME SECTION
+===================================== */
+
+.home {
+    min-height: 430px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #087e8b, #36b7c4);
+    color: white;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    margin-bottom: 28px;
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: #087e8b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e8f7f8;
+}
+
+/* =====================================
+   COMMON SECTION STYLING
+===================================== */
+
+.about,
+.services,
+.doctors,
+.appointment,
+.contact {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.about h2,
+.services h2,
+.doctors h2,
+.appointment h2,
+.contact h2 {
+    font-size: 30px;
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+.about {
+    background-color: white;
+}
+
+.about > p {
+    max-width: 850px;
+    margin: 12px auto;
+}
+
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.about-box {
+    background-color: #e8f7f8;
+    padding: 22px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.about-box h3 {
+    font-size: 27px;
+    color: #087e8b;
+}
+
+/* =====================================
+   SERVICES SECTION
+===================================== */
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #087e8b;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   DOCTORS SECTION
+===================================== */
+
+.doctors {
+    background-color: white;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.doctor-card {
+    background-color: #f5f8fc;
+    padding: 25px 15px;
+    border-radius: 8px;
+}
+
+.doctor-image {
+    font-size: 65px;
+    margin-bottom: 12px;
+}
+
+.doctor-card h3 {
+    color: #087e8b;
+}
+
+.doctor-card p {
+    margin-top: 5px;
+}
+
+/* =====================================
+   APPOINTMENT SECTION
+===================================== */
+
+.appointment-form {
+    max-width: 650px;
+    background-color: white;
+    padding: 35px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Keyboard Focus Indicators */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.appointment-form button:focus-visible,
+.navigation a:focus-visible,
+.button:focus-visible {
+    outline: 3px solid #087e8b;
+    outline-offset: 3px;
+    border-color: #087e8b;
+}
+
+/* Form Button */
+
+.appointment-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #087e8b;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #06636d;
+}
+
+/* Validation Messages */
+
+.error-message {
+    display: block;
+    color: #c62828;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+[aria-invalid="true"] {
+    border-color: #c62828 !important;
+}
+
+/* Form Status Message */
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #087e8b;
+}
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.contact {
+    background-color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-box {
+    background-color: #e8f7f8;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.contact-box h3 {
+    color: #087e8b;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+    background-color: #123b46;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    .service-container,
+    .doctor-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .service-container,
+    .doctor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home {
+        padding: 65px 7%;
+    }
+
+    .home h2 {
+        font-size: 27px;
+    }
+
+    .appointment-form {
+        padding: 20px;
+    }
+
+    .about,
+    .services,
+    .doctors,
+    .appointment,
+    .contact {
+        padding: 45px 6%;
+    }
+
+}
+
+/* =====================================
+   REDUCED MOTION ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+}
